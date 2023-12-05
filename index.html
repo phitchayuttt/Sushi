@@ -2,12 +2,92 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image" href="public/sushi.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite App</title>
+    <link rel="icon" type="image/png" href="public/sushi.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>SushiMan</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <header>
+      <nav class="header_nav">
+        <div class="header_logo">
+          <h4>SushiMan</h4>
+          <div class="header_logo-overlay"></div>
+        </div>
+
+        <ul class="header_menu">
+          <li>
+            <a href="#menu">Menu</a>
+          </li>
+          <li>
+            <a href="#food">Food</a>
+          </li>
+          <li>
+            <a href="#service">Service</a>
+          </li>
+          <li>
+            <a href="#about-us">About Us</a>
+          </li>
+          <li>
+            <img src="assets/search.svg" alt="Search">
+          </li>
+        </ul>
+
+        <ul class="header_menu-mobile">
+          <li>
+            <img src="assets/menu.svg" alt="menu"/>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-image">
+        <img src="assets/sushi-1.png" alt="sushi" />
+        <h2 data-aos="fade-up">
+          日 <br />
+          本 <br />
+          食
+        </h2>
+
+        <div class="hero-image_overlay"></div>
+      </div>
+
+      <div class="hero-content">
+        <div class="hero-content-info">
+          <h1>Feel the taste of japanese food</h1>
+          <p>Feel the taste ofthe most popular Japanese food from anywhere and anytime.
+          </p>
+
+          <div class="hero-content_buttons">
+            <button class="hero-content_order-button">
+              Order Now
+            </button>
+            <button class="hero-content_play-button">
+              <img src="assets/play-circle.svg" alt="play"/>
+              How to Order
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-content_testimonial">
+          <div class="hero-content_customer flex-center">
+            <h4>24<span>k+</span></h4>
+            <p>Happy Customer</p>
+          </div>
+
+          <div class="hero-content_review">
+            <img src="assets/user.png" alt="user" />
+            <p>"This is the best Japanese food delivery service that ever existed."</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <script src="js/script.js" type="module"></script>
   </body>
 </html>
